@@ -1,8 +1,10 @@
 def slice_simple():
     texto = "Awesome"
-    # Código a implementar, se debe utilizar la variable 'texto' para resolver el ejercicio.
-    # No se debe modificar la definición de la función, ni ingresar otro valor mediante input.
+    print(texto[:3].lower())
+    if len(texto)%2==0:
+        print(texto[int(len(texto)/2)-1:int(len(texto)/2)+2].lower())
+    else:
+        print(texto[round(len(texto)/2)-2:round(len(texto)/2)+1].lower())   
 
-
-# Para verificar este ejercicio ejecutar el comando
-# `pytest tp3_slice_simple_test.py` o `python tp3_slice_simple_test.py`
+    print(texto[:4].lower()+texto[-3:].lower())
+        
