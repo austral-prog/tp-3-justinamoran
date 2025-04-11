@@ -1,3 +1,3 @@
 def slice_advanced():
-    texto=str(input())
-    print(texto.strip()[4::2])
+    texto=str(input("Ingresa el texto:"))
+    print(texto[4::2])
